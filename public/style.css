@@ -196,7 +196,7 @@ button:hover {
   
   @keyframes animated-text{
 	from{width: 0;}
-	to{width: 700px;}
+	to{width: 750px;}
   }
   
   /* cursor animations */
