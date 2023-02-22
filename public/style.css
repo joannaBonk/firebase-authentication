@@ -38,8 +38,6 @@ form {
 	background-image: linear-gradient(-225deg, #e3fdf5 50%, #ffe6fa 50%);
 }
 
-
-
 .form-container {
 	display: flex;
 	justify-content: space-around;
@@ -81,7 +79,6 @@ header p {
 	color: #333;
 	height: 90%;
 
-
 	margin-left: -20px;
 	padding: 15px 9px 17px 0px;
 	border-radius: 0px 5px 5px 0px;
@@ -116,12 +113,10 @@ header p {
 	width: 250px;
 }
 
-
 input:focus {
 	transform: translateX(-2px);
 	border-radius: 5px;
 }
-
 
 .errorLabel {
 	margin: 5% 0 0 0;
@@ -178,34 +173,40 @@ button:hover {
 }
 
 .welcome-user p {
-	border-right: solid 3px rgba(0,255,0,.75);
+	border-right: solid 3px rgba(0, 255, 0, 0.75);
 	white-space: nowrap;
-	overflow: hidden;    
-	font-family: 'Source Code Pro', monospace;  
+	overflow: hidden;
+	font-family: 'Source Code Pro', monospace;
 	font-size: 28px;
 	color: rgba(69, 122, 228, 0.7);
 }
 
 /* Animation */
 .welcome-user p {
-	animation: animated-text 4s steps(29,end) 1s 1 normal both,
-			   animated-cursor 600ms steps(29,end) infinite;
-  }
-  
-  /* text animation */
-  
-  @keyframes animated-text{
-	from{width: 0;}
-	to{width: 750px;}
-  }
-  
-  /* cursor animations */
-  
-  @keyframes animated-cursor{
-	from{border-right-color: rgba(0,255,0,.75);}
-	to{border-right-color: transparent;}
-  }
+	animation: animated-text 4s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
+}
 
+/* text animation */
+
+@keyframes animated-text {
+	from {
+		width: 0;
+	}
+	to {
+		width: 750px;
+	}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor {
+	from {
+		border-right-color: rgba(0, 255, 0, 0.75);
+	}
+	to {
+		border-right-color: transparent;
+	}
+}
 
 @keyframes ani9 {
 	0% {
