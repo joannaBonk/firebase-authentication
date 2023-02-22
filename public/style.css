@@ -1,0 +1,217 @@
+/* Fonts Form Google Font ::- https://fonts.google.com/  -::
+@import url('https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+/* End Fonts */
+/* Start Global rules */
+@import url('https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* Start body rules */
+body {
+	background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
+	background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Vibur', cursive;
+	font-family: 'Abel', sans-serif;
+	opacity: 0.95;
+	position: relative;
+}
+
+form {
+	width: 450px;
+	min-height: 500px;
+	height: auto;
+	border-radius: 5px;
+	margin: 2% auto;
+	box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+	padding: 2%;
+	background-image: linear-gradient(-225deg, #e3fdf5 50%, #ffe6fa 50%);
+}
+
+
+
+.form-container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+.field-set {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+header {
+	margin: 2% auto 10% auto;
+	text-align: center;
+}
+
+header h2 {
+	font-size: 250%;
+	font-family: 'Playfair Display', serif;
+	color: #3e403f;
+}
+
+header p {
+	letter-spacing: 0.05em;
+}
+
+.input-item {
+	background: #fff;
+	color: #333;
+	padding: 15px 0px 14px 9px;
+	border-radius: 5px 0 0 5px;
+}
+
+.eye {
+	background: #fff;
+	color: #333;
+	height: 90%;
+
+
+	margin-left: -20px;
+	padding: 15px 9px 17px 0px;
+	border-radius: 0px 5px 5px 0px;
+
+	position: relative;
+	right: 1%;
+	top: -2.2%;
+	z-index: 5;
+
+	cursor: pointer;
+}
+
+.form-input {
+	width: 240px;
+	height: 50px;
+
+	margin-top: 2%;
+	padding: 15px;
+
+	font-size: 16px;
+	font-family: 'Abel', sans-serif;
+	color: #5e6472;
+
+	outline: none;
+	border: none;
+
+	border-radius: 0px 5px 5px 0px;
+	transition: 0.2s linear;
+}
+
+.email-input {
+	width: 250px;
+}
+
+
+input:focus {
+	transform: translateX(-2px);
+	border-radius: 5px;
+}
+
+
+.errorLabel {
+	margin: 5% 0 0 0;
+	color: #9a0a0a;
+	font-weight: bold;
+}
+
+.welcomeUser {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20%;
+	color: #1a2b85;
+	font-size: 2em;
+}
+
+.btn {
+	display: block;
+	color: #252537;
+	width: 280px;
+	height: 50px;
+	padding: 0 20px;
+	background: #fff;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+	transition: all 0.2s linear;
+	margin: 7% auto;
+	letter-spacing: 0.05em;
+}
+
+button:hover {
+	transform: translatey(3px);
+	box-shadow: none;
+}
+
+.btn-sign-up {
+	width: 40%;
+	float: right;
+	margin-right: 2%;
+	background: #b8f2e6;
+}
+
+.info-btn {
+	width: 40%;
+	margin-left: 2%;
+	float: left;
+	background: transparent;
+}
+button:hover {
+	animation: ani9 0.4s ease-in-out infinite alternate;
+}
+
+.welcome-user p {
+	border-right: solid 3px rgba(0,255,0,.75);
+	white-space: nowrap;
+	overflow: hidden;    
+	font-family: 'Source Code Pro', monospace;  
+	font-size: 28px;
+	color: rgba(69, 122, 228, 0.7);
+}
+
+/* Animation */
+.welcome-user p {
+	animation: animated-text 4s steps(29,end) 1s 1 normal both,
+			   animated-cursor 600ms steps(29,end) infinite;
+  }
+  
+  /* text animation */
+  
+  @keyframes animated-text{
+	from{width: 0;}
+	to{width: 600px;}
+  }
+  
+  /* cursor animations */
+  
+  @keyframes animated-cursor{
+	from{border-right-color: rgba(0,255,0,.75);}
+	to{border-right-color: transparent;}
+  }
+
+
+@keyframes ani9 {
+	0% {
+		transform: translateY(3px);
+	}
+	100% {
+		transform: translateY(5px);
+	}
+}

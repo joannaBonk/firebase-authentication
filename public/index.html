@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Firebase Hosting</title>
+
+  <script defer src="/__/firebase/9.17.1/firebase-app-compat.js"></script>
+  <script defer src="/__/firebase/9.17.1/firebase-auth-compat.js"></script>
+  <script defer src="/__/firebase/9.17.1/firebase-database-compat.js"></script>
+  <script defer src="/__/firebase/9.17.1/firebase-firestore-compat.js"></script>
+  <script defer src="/__/firebase/9.17.1/firebase-storage-compat.js"></script>
+  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  <script src="https://kit.fontawesome.com/783b7eab2a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="viewForNotLoggedUser">
+
+
+    <form>
+      <!-- Log in -->
+      <div class="form-container logIn">
+
+        <header class="head-form">
+          <h2>Log In</h2>
+          <p>Login here using your email and password</p>
+      
+          <p>Or Sign Up here!</p>
+          <div>
+            <div id="errorLabel" class="errorLabel"></div>
+          </div>
+        </header>
+
+        <div class="field-set logIn">
+
+          <div>
+            <span class="input-item">
+              <i class="fa fa-user-circle user-circle"></i>
+            </span>
+            <input id="emailForm" type="email" autocomplete="on" placeholder="@UserEmail" required class="form-input email-input">
+          </div>
+
+          <div>
+            <span class="input-item">
+              <i class="fa fa-key"></i>
+            </span>
+            <input id="passwordForm" type="password" minlength="6" placeholder="Password" class="form-input">
+           
+            <span>
+              <i class="fa fa-eye eye" aria-hidden="true" type="button" id="eye"></i>
+            </span>
+          </div>
+
+          <div>
+            <span class="input-item">
+              <i class="fa fa-user-circle user-circle"></i>
+            </span>
+            <input id="firstNameForm" type="text" placeholder="First Name" required class="form-input first-name-input">
+          </div>
+
+          <div>
+            <button id="signInBtn" type="button" class="btn btn-sign-in">Log In</button>
+          </div>
+          <div>
+            <button id="signUpBtn" type="button" class="btn btn-sign-up">Sign Up
+              <i class="fa fa-user-plus" aria-hidden="true"></i>
+            </button>
+            <button id="infoBtn" type="button" class="btn info-btn">Min. password length is 6</button>
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+   
+    </form>
+
+
+
+  </div>
+
+
+
+  <div id="viewForLoggedUser">
+    <div  class="welcome-user">
+      <p><span id="welcomeUser"></span></p>
+    </div>
+    <button id="signOutBtn" type="button" class="btn btn-sign-out">Sign Out</button>
+  </div>
+
+
+
+
+  <script type="module" src="app.js"></script>
+</body>
+
+</html>
