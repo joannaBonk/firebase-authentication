@@ -130,9 +130,7 @@ const authUserObserver = () => {
 };
 authUserObserver();
 
-//Operacja 4 Hosting
-//Konczysz działanie aplikacji w konsoli crt+c, nastepnie:
-// w consoli wpisujesz: firebase deploy
+
 
 
 
