@@ -36,7 +36,7 @@ const signOutBtn = document.querySelector('#signOutBtn');
 const errorLabel = document.querySelector('#errorLabel');
 const welcomeUser = document.querySelector('#welcomeUser');
 
-const form = document.querySelector('form');
+
 
 const viewForNotLoggedUser = document.querySelector('#viewForNotLoggedUser');
 const viewForLoggedUser = document.querySelector('#viewForLoggedUser');

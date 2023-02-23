@@ -124,11 +124,12 @@ input:focus {
 	font-weight: bold;
 }
 
-.welcomeUser {
+.welcome-user {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 20%;
+	margin: 70px;
 	color: #1a2b85;
 	font-size: 2em;
 }
@@ -146,7 +147,7 @@ input:focus {
 	cursor: pointer;
 	text-align: center;
 	transition: all 0.2s linear;
-	margin: 7% auto;
+	margin: 20px auto;
 	letter-spacing: 0.05em;
 }
 
@@ -193,7 +194,7 @@ button:hover {
 		width: 0;
 	}
 	to {
-		width: 750px;
+		width: 800px;
 	}
 }
 
