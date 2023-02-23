@@ -127,11 +127,13 @@ input:focus {
 .welcome-user {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	margin: 70px;
 	color: #1a2b85;
 	font-size: 2em;
+	height: 80vh;
+	width: 80vw;
 }
 
 .btn {
@@ -176,7 +178,7 @@ button:hover {
 .welcome-user p {
 	border-right: solid 3px rgba(0, 255, 0, 0.75);
 	white-space: nowrap;
-	overflow: hidden;
+	overflow:hidden;
 	font-family: 'Source Code Pro', monospace;
 	font-size: 28px;
 	color: rgba(69, 122, 228, 0.7);
@@ -194,9 +196,11 @@ button:hover {
 		width: 0;
 	}
 	to {
-		width: 800px;
+		width: 80vw;
 	}
 }
+
+
 
 /* cursor animations */
 
@@ -216,4 +220,13 @@ button:hover {
 	100% {
 		transform: translateY(5px);
 	}
+}
+
+/* media queries */
+
+@media (max-width: 800px) {
+	.welcome-user p {
+		white-space:pre-wrap;
+	}
+	
 }
